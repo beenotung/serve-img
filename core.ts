@@ -48,12 +48,3 @@ export function toMedia(root_dir: string, image: ImageFile): Media {
     filename,
   }
 }
-
-async function main() {
-  let dir = '/home/beenotung/.cache/thumbnails/normal'
-  for await (let image of scanDir(dir)) {
-    let media = toMedia(dir, image)
-    console.log(media)
-  }
-}
-// main().catch(e => console.error(e))

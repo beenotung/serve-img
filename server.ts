@@ -13,9 +13,7 @@ function escapeHTML(text: string): string {
 
 function main() {
   let { root_dir, port } = parseArgs()
-  root_dir = '/home/beenotung/.cache/thumbnails'
-  root_dir = '/home/beenotung/.cache/thumbnails/normal'
-  root_dir = '/home/beenotung/Pictures'
+  console.log('root directory:', root_dir)
 
   let app = express()
 
