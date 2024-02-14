@@ -21,9 +21,13 @@
   "bin": {
     "serve-img": "./bin.js"
   },
+  "files": [
+    "dist",
+    "bin.js"
+  ],
   "scripts": {
     "test": "tsc --noEmit",
-    "build": "tsc -p .",
+    "build": "rm -rf dist && tsc -p .",
     "start": "ts-node-dev server.ts"
   },
   "dependencies": {
