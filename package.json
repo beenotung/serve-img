@@ -18,6 +18,9 @@
     "url": "https://github.com/beenotung/serve-img/issues"
   },
   "main": "index.js",
+  "bin": {
+    "serve-img": "./bin.js"
+  },
   "scripts": {
     "test": "tsc --noEmit",
     "build": "tsc -p .",
